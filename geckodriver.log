@@ -1,0 +1,369 @@
+1690467110068	geckodriver	INFO	Listening on 127.0.0.1:65363
+1690467110586	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65364" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileoVDhHd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690467110882	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690467111005	Marionette	INFO	Listening on port 65371
+WebDriver BiDi listening on ws://127.0.0.1:65364
+Read port: 65371
+1690467111205	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65364/devtools/browser/59e2609e-1a2a-4f6a-9a93-49d497617ed8
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1690467363360	Marionette	INFO	Stopped listening on port 65371
+Dynamically enable window occlusion 1
+1690467367119	geckodriver	INFO	Listening on 127.0.0.1:49431
+1690467367642	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49432" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileWfRIGa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690467367892	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690467367997	Marionette	INFO	Listening on port 49439
+WebDriver BiDi listening on ws://127.0.0.1:49432
+Read port: 49439
+1690467368207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49432/devtools/browser/61f32fed-79a2-4f74-bc52-5750ada1c4ae
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1690467769743	Marionette	INFO	Stopped listening on port 49439
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1690467769788	WebDriver BiDi	ERROR	Failed to stop protocol: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 51"  data: no] Stack trace: allowAllCerts.disable()@cert.sys.mjs:51
+destroy()@Session.sys.mjs:205
+deleteSession()@WebDriverBiDi.sys.mjs:142
+stop()@WebDriverBiDi.sys.mjs:230
+observe()@resource://gre/modules/AsyncShutdown.sys.mjs:575
+1690467775710	geckodriver	INFO	Listening on 127.0.0.1:50037
+1690467776482	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50038" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileavBzdm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690467777061	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690467777167	Marionette	INFO	Listening on port 50045
+WebDriver BiDi listening on ws://127.0.0.1:50038
+Read port: 50045
+1690467777795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50038/devtools/browser/66284083-024d-4a91-ac12-0289f2381c23
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1690550535790	geckodriver	INFO	Listening on 127.0.0.1:52074
+1690550536287	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52075" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofilerzpLaf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690550536565	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690550536670	Marionette	INFO	Listening on port 52081
+WebDriver BiDi listening on ws://127.0.0.1:52075
+Read port: 52081
+1690550536889	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52075/devtools/browser/5dd81ffb-5976-4db6-acff-4cd83fd2cab4
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1690809690153	geckodriver	INFO	Listening on 127.0.0.1:55683
+1690809690657	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55684" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofile8TeM57"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690809690986	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690809691108	Marionette	INFO	Listening on port 55690
+WebDriver BiDi listening on ws://127.0.0.1:55684
+Read port: 55690
+1690809691373	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55684/devtools/browser/9021b91a-4e89-4e43-8dd7-3a8563603d3e
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1690817811751	Marionette	INFO	Stopped listening on port 55690
+Dynamically enable window occlusion 1
+1691084133252	geckodriver	INFO	Listening on 127.0.0.1:63514
+1691084133756	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63515" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileWyiFpt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691084134089	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691084134211	Marionette	INFO	Listening on port 63521
+WebDriver BiDi listening on ws://127.0.0.1:63515
+Read port: 63521
+1691084134485	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63515/devtools/browser/11907c10-d97e-45c7-9f36-eedb41a373bf
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691084243919	Marionette	INFO	Stopped listening on port 63521
+Dynamically enable window occlusion 1
+1691084245949	geckodriver	INFO	Listening on 127.0.0.1:63667
+1691084246476	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63668" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofilewneZUC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691084246743	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691084246847	Marionette	INFO	Listening on port 63674
+WebDriver BiDi listening on ws://127.0.0.1:63668
+Read port: 63674
+1691084247056	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63668/devtools/browser/f8c16c2b-c513-4d02-8453-62c523965e2c
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691084519511	Marionette	INFO	Stopped listening on port 63674
+Dynamically enable window occlusion 1
+1691084629597	geckodriver	INFO	Listening on 127.0.0.1:63850
+1691084630128	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63851" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofilergXzdO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691084630388	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691084630491	Marionette	INFO	Listening on port 63856
+WebDriver BiDi listening on ws://127.0.0.1:63851
+Read port: 63856
+1691084630695	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63851/devtools/browser/62913b06-6b9d-46a7-8c9f-ec105defe251
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691085078962	Marionette	INFO	Stopped listening on port 63856
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64009" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileCHhjSA"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691084804560	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691084804667	Marionette	INFO	Listening on port 64014
+WebDriver BiDi listening on ws://127.0.0.1:64009
+Read port: 64014
+1691084804878	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64009/devtools/browser/90261e4a-b2cc-4815-9d76-49688aadbe32
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691085080124	Marionette	INFO	Stopped listening on port 64014
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64166" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofile7Ix6bx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691084949830	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691084949947	Marionette	INFO	Listening on port 64171
+WebDriver BiDi listening on ws://127.0.0.1:64166
+Read port: 64171
+1691084950179	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64166/devtools/browser/f4ef10d3-d968-499c-895c-fe3582c1e6ea
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691085081187	Marionette	INFO	Stopped listening on port 64171
+Dynamically enable window occlusion 1
+1691093848004	geckodriver	INFO	Listening on 127.0.0.1:64539
+1691093848516	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64540" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofile6aOFej"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691093848804	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691093848907	Marionette	INFO	Listening on port 64545
+WebDriver BiDi listening on ws://127.0.0.1:64540
+Read port: 64545
+1691093849105	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64540/devtools/browser/8d26594b-da91-46ff-89de-490cdb929e8c
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691093925693	Marionette	INFO	Stopped listening on port 64545
+Dynamically enable window occlusion 1
+1691094058451	geckodriver	INFO	Listening on 127.0.0.1:64741
+1691094058959	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64742" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileYsJOeX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691094059218	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691094059321	Marionette	INFO	Listening on port 64747
+WebDriver BiDi listening on ws://127.0.0.1:64742
+Read port: 64747
+1691094059536	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64742/devtools/browser/2161f639-c9f9-4a79-8817-ac41e05c635b
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691094173166	Marionette	INFO	Stopped listening on port 64747
+Dynamically enable window occlusion 1
+1691094175240	geckodriver	INFO	Listening on 127.0.0.1:64991
+1691094175767	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64992" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileZB88V7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691094176033	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691094176137	Marionette	INFO	Listening on port 64997
+WebDriver BiDi listening on ws://127.0.0.1:64992
+Read port: 64997
+1691094176351	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64992/devtools/browser/e7f05fe3-2c95-4729-b2da-2a8ea9098814
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691097586825	Marionette	INFO	Stopped listening on port 64997
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65460" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofilehagulR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691097577651	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691097577755	Marionette	INFO	Listening on port 65465
+WebDriver BiDi listening on ws://127.0.0.1:65460
+Read port: 65465
+1691097577963	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65460/devtools/browser/a8122286-d617-4303-9695-ec9623947eef
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691097785925	Marionette	INFO	Stopped listening on port 65465
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49329" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileEXmNpx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691097781647	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691097781751	Marionette	INFO	Listening on port 49334
+WebDriver BiDi listening on ws://127.0.0.1:49329
+Read port: 49334
+1691097781956	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49329/devtools/browser/912f637b-f428-469d-b658-131087595387
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691097942269	Marionette	INFO	Stopped listening on port 49334
+Dynamically enable window occlusion 1
+1691097944103	geckodriver	INFO	Listening on 127.0.0.1:49607
+1691097944631	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49608" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileOpUT2w"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691097944914	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691097945022	Marionette	INFO	Listening on port 49613
+WebDriver BiDi listening on ws://127.0.0.1:49608
+Read port: 49613
+1691097945274	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49608/devtools/browser/3391e3f2-3a12-4b0c-814b-79d66452f60c
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691098021300	Marionette	INFO	Stopped listening on port 49613
+Dynamically enable window occlusion 1
+1691149466607	geckodriver	INFO	Listening on 127.0.0.1:50633
+1691149467119	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50634" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofilej6jHAa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691149467427	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691149467572	Marionette	INFO	Listening on port 50641
+WebDriver BiDi listening on ws://127.0.0.1:50634
+Read port: 50641
+1691149467861	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50634/devtools/browser/befc014e-4adc-4daa-9051-257af8ac861b
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691150093107	Marionette	INFO	Stopped listening on port 50641
+Dynamically enable window occlusion 1
+1691150113308	geckodriver	INFO	Listening on 127.0.0.1:51003
+1691150113830	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51004" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileUeWHca"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691150114101	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691150114217	Marionette	INFO	Listening on port 51009
+WebDriver BiDi listening on ws://127.0.0.1:51004
+Read port: 51009
+1691150114427	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51004/devtools/browser/773c09ba-9915-4647-846c-af6a736f80d5
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691150529946	Marionette	INFO	Stopped listening on port 51009
+Dynamically enable window occlusion 1
+1691150648485	geckodriver	INFO	Listening on 127.0.0.1:51399
+1691150648991	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51400" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileu5n2Xt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691150649253	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691150649373	Marionette	INFO	Listening on port 51405
+WebDriver BiDi listening on ws://127.0.0.1:51400
+Read port: 51405
+1691150649590	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51400/devtools/browser/85deb0f4-2139-4aed-a260-986ca2fce041
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1691155097214	Marionette	INFO	Stopped listening on port 51405
+Dynamically enable window occlusion 1
+1691158425553	geckodriver	INFO	Listening on 127.0.0.1:52362
+1691158426068	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52363" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileCagxSe"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691158426337	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691158426450	Marionette	INFO	Listening on port 52368
+WebDriver BiDi listening on ws://127.0.0.1:52363
+Read port: 52368
+1691158426655	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52363/devtools/browser/45651229-7e3d-4b48-a508-261999b26b7a
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691158825141	Marionette	INFO	Stopped listening on port 52368
+Dynamically enable window occlusion 1
+1691158858516	geckodriver	INFO	Listening on 127.0.0.1:52706
+1691158859037	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52707" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileTorW14"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691158859296	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691158859410	Marionette	INFO	Listening on port 52712
+WebDriver BiDi listening on ws://127.0.0.1:52707
+Read port: 52712
+1691158859622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52707/devtools/browser/6b8445f5-50d3-4f24-9336-df218a8eca05
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1691159251033	Marionette	INFO	Stopped listening on port 52712
+Dynamically enable window occlusion 1
+1691159315344	geckodriver	INFO	Listening on 127.0.0.1:52911
+1691159315856	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52912" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofilePVpGvE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691159316125	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691159316246	Marionette	INFO	Listening on port 52917
+WebDriver BiDi listening on ws://127.0.0.1:52912
+Read port: 52917
+1691159316452	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52912/devtools/browser/f3301e66-ca7a-40c8-8e6c-ef9a32ed24ff
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+JavaScript error: , line 0: NotFoundError: Could not move source file(C:\Users\Zhafyr\AppData\Local\Temp\rust_mozprofilePVpGvE\bookmarkbackups\bookmarks-2023-08-04.jsonlz4) because it does not exist
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1691176073199	Marionette	INFO	Stopped listening on port 52917
+Dynamically enable window occlusion 1
+1691176077073	geckodriver	INFO	Listening on 127.0.0.1:53785
+1691176077597	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53786" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileUZyfIQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691176077895	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691176078023	Marionette	INFO	Listening on port 53794
+WebDriver BiDi listening on ws://127.0.0.1:53786
+Read port: 53794
+1691176078236	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53786/devtools/browser/5c0ae390-f2a8-4ec9-ab29-8eca1b1efc8a
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2003))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
