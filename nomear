@@ -1,0 +1,11 @@
+import os
+
+dir='C:\\Users\\Zhafyr\\Desktop\\desenhos\\pata desenhos\\Baile cripe\\Nova pasta\\animation\\intro_2'
+vetor = os.listdir(dir)
+i=100
+for vet in vetor:
+    nome= f'{i}.png'
+    nome_novo= os.path.join(dir,nome)
+    nome_antigo = os.path.join(dir,vet)
+    os.rename(nome_antigo,nome_novo)
+    i+=1

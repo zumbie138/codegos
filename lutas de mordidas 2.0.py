@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup as bp
 import requests
 from bs4 import BeautifulSoup
 import re
+import os
 
 class BiteFight:
     def __init__(self):
@@ -26,7 +27,8 @@ class BiteFight:
                 "city": '/html/body/div[5]/div[1]/ul/li[5]/a',
                 "gruta":'/html/body/div[5]/div[2]/div[3]/div[2]/div/div[2]/table/tbody/tr[4]/td[2]/a',
                 "igreja": '/html/body/div[5]/div[2]/div[3]/div[2]/div/div[2]/table/tbody/tr[7]/td[2]/a',
-                "visao_geral": '/html/body/div[5]/div[1]/ul/li[2]/a'
+                "visao_geral": '/html/body/div[5]/div[1]/ul/li[2]/a',
+                "pop_up" : '/html/body/div[6]/div[2]/div/div/div[3]/div[2]/div[1]'
             },
             "buttons":{
                 "return": '/html/body/div[5]/div[2]/div[3]/div/a',
@@ -134,11 +136,15 @@ class BiteFight:
             caca_su=soup.find('div', {'class':"buildingDesc"})
             if caca_su is None:
                 self.clicar_elemento(self.xpaths_site["buttons"]["return"])
-                print("A caçada numero", i+1,"falhou!")
+                print(f"\r"+" "*50, end='')
+                print(f"\rA caçada numero {i+1} falhou!",end='')
                 self.clicar_elemento(humanos)
+                self.verificar_pop_up()
             else:
                 self.clicar_elemento(self.xpaths_site["buttons"]["repeat"])
-                print("Caçou", i+1,"vezes!")
+                self.verificar_pop_up()
+                print(f"\r"+" "*50, end='')
+                print(f"\rCaçou {i+1} vezes!",end='')
         self.chamar_menu()
         
     def cacar_demonios(self,dificuldade):
@@ -151,13 +157,17 @@ class BiteFight:
             status=self.chamar_status()
             vida= status[5]
             energ=status[3]
-            print(f"energia:{status[3]}/{status[4]}\nvida:{status[5]}/{status[6]}")
             if vida >= 10000 and energ>=1:
                 self.clicar_elemento(demonios)
+                self.verificar_pop_up()
                 self.clicar_elemento(self.xpaths_site["buttons"]["return"])
-                print("caçou", i+1,"vezes")
+                sys.stdout.write("\r")
+                sys.stdout.write(f"Energia:{status[3]}/{status[4]}")
+                sys.stdout.write(f"  Vida:{status[5]}/{status[6]}")
+                sys.stdout.write(f"  Caçou {i+1} vezes!")
+                sys.stdout.flush()
             else:
-                print("você esta com a vida baixa, vá descansar!")
+                print("\nVocê esta com a vida baixa, vá descansar!")
                 break
         self.chamar_menu()
         
@@ -166,6 +176,8 @@ class BiteFight:
         soup=BeautifulSoup(site, 'lxml')
         status_vamp=soup.find('div', {'class':"gold"})
         text_status=status_vamp.get_text()
+        #r'\b\d{1,3}(?:\.\d{3})*(?:\.\d+)\b'
+        #'\d+(?:\.\d+)?'
         numeros_str = re.findall(r'\d+(?:\.\d+)?', text_status)
         numeros_inteiros=[int(numero_str.replace(".", "")) for numero_str in numeros_str]
         gold,inf_stone,frag,energ,energ_t,vida,vida_t,nivel,nivel_com = numeros_inteiros
@@ -183,18 +195,19 @@ class BiteFight:
             status=self.chamar_status()
             gold1=int(status[0])
             vida= status[5]
-            vida_t=status[6]
             energ=status[3]
-            energ_t=status[4]
-            print(f"energia:{energ}/{energ_t}\nvida:{vida}/{vida_t}")
             if vida >= 10000 and energ>=1:
                 self.clicar_elemento(self.xpaths_site["pvp"]["pvp_escolha"])
                 site=self.drive.page_source
                 soup=BeautifulSoup(site, 'lxml')
                 nome_lobo=soup.find('h2')
                 text_lobo=nome_lobo.get_text()
-                print("Irá atacar o",text_lobo,".")
+                if "Caça aos lobisomens" in text_lobo:
+                    print("\nVocê não foi capaz de encontrar um vítima")
+                    break
+                print(f"\nIrá atacar o {text_lobo}.")
                 self.clicar_elemento(self.xpaths_site["pvp"]["pvp_ataque"])
+                self.verificar_pop_up()
                 site=self.drive.page_source
                 soup=BeautifulSoup(site, 'lxml')
                 pvp_re=soup.find('h3')
@@ -206,9 +219,13 @@ class BiteFight:
                     venceu+=1
                 else:
                     perdeu+=1
-                print(pvp_txt)
+                print(f"! {pvp_txt} !")
                 self.clicar_elemento(self.xpaths_site["buttons"]["return"])
-                print("caçou", i+1,"vezes")
+                sys.stdout.write("\r")
+                sys.stdout.write(f"Energia:{status[3]}/{status[4]}")
+                sys.stdout.write(f"  Vida:{status[5]}/{status[6]}")
+                sys.stdout.write(f"  Caçou {i+1} vezes!")
+                sys.stdout.flush()
                 gold=gold+gold3
             else:
                 print("você esta com a vida baixa, vá descansar!")
@@ -232,7 +249,10 @@ class BiteFight:
         self.clicar_elemento(visao_geral)
         presente_q=int(input("Quantos presentes deseja abrir?"))
         for i in range(presente_q):
-            self.clicar_elemento(present)
+            try:
+                self.clicar_elemento(present)
+            except:
+                break
             print("abriu o",i+1,"presente")
         self.chamar_menu()
         
@@ -240,7 +260,10 @@ class BiteFight:
         visao_geral=self.xpaths_site["boton_menu"]["visao_geral"]
         pocao=self.xpaths_site["curar"]["curar_pocao"]
         self.clicar_elemento(visao_geral)
-        self.clicar_elemento(pocao)
+        try:
+            self.clicar_elemento(pocao)
+        except:
+            print("Não tem poção !!")
         self.chamar_menu()
         
     def ir_igreja(self):
@@ -251,6 +274,13 @@ class BiteFight:
         self.clicar_elemento(igreja)
         self.clicar_elemento(curar)
         self.chamar_menu()
+        
+    def verificar_pop_up(self):
+        site=self.drive.page_source
+        soup=BeautifulSoup(site, 'lxml')
+        popup_verify=soup.find('div', {'id':"infoPopup"})
+        if popup_verify is not None:
+            self.clicar_elemento(self.xpaths_site["boton_menu"]["pop_up"])
         
 bite_fight= BiteFight()
 bite_fight.iniciar_navegador()
