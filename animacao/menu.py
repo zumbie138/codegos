@@ -28,18 +28,23 @@ def chamar_menu(param):
 def button_click(index):
     #print(f"Botão {index + 1} clicado!")
     chamar_menu(index)
+#########################################################
+############### MUDA AQUI O DIRETORIO ###################
+#########################################################
+##########\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/#########
+diretorio='C:\\Users\\Zhafyr\\Desktop\\codegos\\caveiras'
 root = tk.Tk()
 root.title("Menu com Imagens")
-background_image = PhotoImage(file="C:\\Users\\Zhafyr\\Desktop\\codegos\\caveiras\\fundo.png")  
+background_image = PhotoImage(file=f"{diretorio}\\fundo.png")  
 background_label = tk.Label(root, image=background_image)
 background_label.place(relwidth=1, relheight=1)
 button_data = [
-    {"image": "C:\\Users\\Zhafyr\\Desktop\\codegos\\caveiras\\botao1.png", "text": "CaaAVeeeiRAaaa"},  
-    {"image": "C:\\Users\\Zhafyr\\Desktop\\codegos\\caveiras\\botao2.png", "text": "caveirinha"},  
-    {"image": "C:\\Users\\Zhafyr\\Desktop\\codegos\\caveiras\\botao3.png", "text": "cav"},  
-    {"image": "C:\\Users\\Zhafyr\\Desktop\\codegos\\caveiras\\botao4.png", "text": "CRANIUM"}, 
-    {"image": "C:\\Users\\Zhafyr\\Desktop\\codegos\\caveiras\\botao5.png", "text": "Sr. Caveira"},  
-    {"image": "C:\\Users\\Zhafyr\\Desktop\\codegos\\caveiras\\botao6.png", "text": "skul"},  
+    {"image": f"{diretorio}\\botao1.png", "text": "CaaAVeeeiRAaaa"},  
+    {"image": f"{diretorio}\\botao2.png", "text": "caveirinha"},  
+    {"image": f"{diretorio}\\botao3.png", "text": "cav"},  
+    {"image": f"{diretorio}\\botao4.png", "text": "CRANIUM"}, 
+    {"image": f"{diretorio}\\botao5.png", "text": "Sr. Caveira"},  
+    {"image": f"{diretorio}\\botao6.png", "text": "skul"},  
 ]
 mid = len(button_data) // 2 
 left_frame = tk.Frame(root)

@@ -9,18 +9,21 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
+import time as tempo
 
 class BiteFight:
     def __init__(self):
         self.link_bite_fight="https://s36-br.bitefight.gameforge.com/user/login"
-        self.login="Zumbie138"
+        self.login="gabriel.mks@gmail.com"
         self.senha="Leproso.66"
         self.xpaths_site ={
             "init":{
-                "usuario": '/html/body/div[5]/div[2]/div/div[2]/div/div/table/tbody/tr/td[2]/form/table/tbody/tr[1]/td[2]/input',
-                "senha": '/html/body/div[5]/div[2]/div/div[2]/div/div/table/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input',
-                "entrar": '/html/body/div[5]/div[2]/div/div[2]/div/div/table/tbody/tr/td[2]/form/table/tbody/tr[5]/td[2]/input',
-                "cookie": '/html/body/div[8]/div/div/span[2]/button[2]'
+                "usuario": '/html/body/div[1]/div/div/div/div[2]/div[2]/div[2]/div/div/form/div[2]/div/input',
+                "senha": '/html/body/div[1]/div/div/div/div[2]/div[2]/div[2]/div/div/form/div[3]/div/input',
+                "entrar": '/html/body/div[1]/div/div/div/div[2]/div[2]/div[2]/div/div/form/p/button[1]',
+                "cookie": '/html/body/div[4]/div/div/span[2]/button[2]',
+                "botao":'/html/body/div[1]/div/div/div/div[2]/div[2]/div[2]/div/ul/li[1]',
+                "botao2":'/html/body/div[1]/div/div/div/div[2]/div[1]/div[2]/div/div/button/span'
             },
             "boton_menu":{
                 "cacar": '/html/body/div[5]/div[1]/ul/li[6]/a',
@@ -53,8 +56,8 @@ class BiteFight:
             "curar":{
                 "curar_igreja": '/html/body/div[5]/div[2]/div[3]/div[2]/div/div[2]/table/tbody/tr[1]/td[2]/form/div/div/input',
                 "curar_pocao": '/html/body/div[5]/div[2]/div[5]/div[2]/div/div/div/div[1]/table/tbody/tr/td[2]/div/div/a',
-                "presente_ouro": '/html/body/div[5]/div[2]/div[5]/div[2]/div/div/div/div[1]/table/tbody/tr[1]/td[2]/div/div/a',
-                "presente_energia": '/html/body/div[5]/div[2]/div[5]/div[2]/div/div/div/div[1]/table/tbody/tr[2]/td[2]/div/div/a'
+                "presente_ouro": '/html/body/div[5]/div[2]/div[6]/div[2]/div/div/div/div[1]/table/tbody/tr/td[2]/div/div/a',
+                "presente_energia": '/html/body/div[5]/div[2]/div[6]/div[2]/div/div/div/div[1]/table/tbody/tr[2]/td[2]/div/div/a'
             }            
         }
         self.drive = webdriver.Firefox()
@@ -119,9 +122,17 @@ class BiteFight:
     def iniciar_navegador(self):
         self.drive.get(self.link_bite_fight)
         self.clicar_elemento(self.xpaths_site['init']['cookie'])
+        tempo.sleep(0.5)
+        self.clicar_elemento(self.xpaths_site['init']['botao'])
         self.achar_elemento(self.xpaths_site['init']['usuario'],self.login)
         self.achar_elemento(self.xpaths_site['init']['senha'],self.senha)
+        tempo.sleep(0.5)
         self.clicar_elemento(self.xpaths_site['init']['entrar'])
+        input("pressione qualquer tecla para continuar")
+        self.clicar_elemento(self.xpaths_site['init']['botao2'])
+        tempo.sleep(7)
+        self.drive.close()
+        self.drive.switch_to.window(self.drive.window_handles[0])
         self.chamar_menu()
         
     def cacar_humanos(self, local):
@@ -172,16 +183,28 @@ class BiteFight:
         self.chamar_menu()
         
     def chamar_status(self):
+        tempo.sleep(1)
         site=self.drive.page_source
         soup=BeautifulSoup(site, 'lxml')
         status_vamp=soup.find('div', {'class':"gold"})
-        text_status=status_vamp.get_text()
+        #text_status=status_vamp.get_text()
         #r'\b\d{1,3}(?:\.\d{3})*(?:\.\d+)\b'
         #'\d+(?:\.\d+)?'
-        numeros_str = re.findall(r'\d+(?:\.\d+)?', text_status)
-        numeros_inteiros=[int(numero_str.replace(".", "")) for numero_str in numeros_str]
-        gold,inf_stone,frag,energ,energ_t,vida,vida_t,nivel,nivel_com = numeros_inteiros
-        return [gold, inf_stone, frag, energ, energ_t, vida, vida_t, nivel, nivel_com]
+        #\d{1,3}(?:\.\d{3})*(?:\.\d+)?
+        #\d{1,3}(?:\.\d{3})*(?:\.\d{1,10})?
+        #\d{1,3}(?:\.\d{3})*(?:\.\d{1,10})?|\d+
+        #numeros_str = re.findall(r'\d+(?:\.\d+)?', text_status)
+        #numeros_inteiros=[int(numero_str.replace(".", "")) for numero_str in numeros_str]
+        numeros_str = [text.strip() for text in status_vamp.stripped_strings]
+        gold,inf_stone,frag,energ,vida,nivel,nivel_com = numeros_str
+        energ_v=energ.split('/')
+        energia=int(energ_v[0].strip())
+        energia_total=int(energ_v[1].strip())
+        vida_v=vida.split('/')
+        vida_atual=int(vida_v[0].strip().replace(".",""))
+        vida_total=int(vida_v[1].strip().replace(".",""))
+        gold=int(gold.replace(".",""))
+        return [gold, inf_stone, frag, energia, energia_total, vida_atual,vida_total, nivel, nivel_com]
     
     def cacar_pvp(self):
         venceu=0
@@ -279,8 +302,11 @@ class BiteFight:
         site=self.drive.page_source
         soup=BeautifulSoup(site, 'lxml')
         popup_verify=soup.find('div', {'id':"infoPopup"})
-        if popup_verify is not None:
-            self.clicar_elemento(self.xpaths_site["boton_menu"]["pop_up"])
+        if popup_verify:
+            print("missao concluida")
+            input("pressione qualquer tecla para continuar")
+            # alert=self.drive.switch_to.alert
+            # self.clicar_elemento(self.xpaths_site["boton_menu"]["pop_up"])
         
 bite_fight= BiteFight()
 bite_fight.iniciar_navegador()
