@@ -1,0 +1,83 @@
+1700792144890	geckodriver	INFO	Listening on 127.0.0.1:50765
+1700792145408	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50766" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileEGZvb7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700792146011	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700792146154	Marionette	INFO	Listening on port 50772
+WebDriver BiDi listening on ws://127.0.0.1:50766
+Read port: 50772
+1700792146330	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50766/devtools/browser/c8bd70d5-93f8-4d6b-af3d-c128d576ec49
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://lobby.bitefight.gameforge.com."
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1700792161972	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://gameforge.com/js/connect.js, line 86: TypeError: n.challengeService is undefined
+1700792176072	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1700792531746	Marionette	INFO	Stopped listening on port 50772
+Dynamically enable window occlusion 1
+1700792624532	geckodriver	INFO	Listening on 127.0.0.1:51381
+1700792625045	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51382" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofilewXRlhF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700792625328	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700792625458	Marionette	INFO	Listening on port 51387
+WebDriver BiDi listening on ws://127.0.0.1:51382
+Read port: 51387
+1700792625634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51382/devtools/browser/49bbd854-30ef-463f-8a48-0dd9ab60c9d7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://lobby.bitefight.gameforge.com."
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1700792655365	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://s36-br.bitefight.gameforge.com."
+1700793029868	Marionette	INFO	Stopped listening on port 51387
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1700793030235	WebDriver BiDi	ERROR	Failed to stop protocol: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: chrome://remote/content/marionette/cert.sys.mjs :: allowAllCerts.disable :: line 51"  data: no] Stack trace: allowAllCerts.disable()@cert.sys.mjs:51
+destroy()@Session.sys.mjs:239
+deleteSession()@WebDriverBiDi.sys.mjs:140
+stop()@WebDriverBiDi.sys.mjs:228
+observe()@resource://gre/modules/AsyncShutdown.sys.mjs:573
+1700827642075	geckodriver	INFO	Listening on 127.0.0.1:52352
+1700827642576	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52353" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Zhafyr\\AppData\\Local\\Temp\\rust_mozprofileoufoZj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700827642908	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700827643043	Marionette	INFO	Listening on port 52360
+WebDriver BiDi listening on ws://127.0.0.1:52353
+Read port: 52360
+1700827643281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52353/devtools/browser/0468b4d4-ccb6-4929-af12-5893199f5558
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://lobby.bitefight.gameforge.com."
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1700827673082	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://gameforge.com/tra/game1.js line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://order.gamepay.de."
+1700859717585	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://dna.uol.com.br/js/dna-persist.min.js, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://payment.boacompra.com."
+JavaScript error: , line 0: AbortError: The operation was aborted. 
+JavaScript warning: https://payment.boacompra.com/b41cac355a584134913b5f841f67c533, line 6: Script terminated by timeout at:
+nrWrapper@https://payment.boacompra.com/b41cac355a584134913b5f841f67c533:6:16132
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://order.gamepay.de."
+1700860752268	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://payment.boacompra.com/b2ee498e879347ce9314aa526441be8a, line 6: Script terminated by timeout at:
+nrWrapper@https://payment.boacompra.com/b2ee498e879347ce9314aa526441be8a:6:16132
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://order.gamepay.de."
+1700860775764	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://dna.uol.com.br/js/dna-persist.min.js, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://payment.boacompra.com."
+JavaScript warning: https://payment.boacompra.com/475e119103624251a337e1d94a18d4eb, line 6: Script terminated by timeout at:
+nrWrapper@https://payment.boacompra.com/475e119103624251a337e1d94a18d4eb:6:16132
+

@@ -1,0 +1,2 @@
+frase = str(input('Escreva uma frase qualquer: ')).strip().lower()
+print(f'a letra A aparece {frase.count("a")} na frase\nA primeira letra A apareceu na posição {frase.find("a")+1}\nA ultima letra A apareceu na posição {frase.rfind("a")+1}')

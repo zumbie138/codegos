@@ -64,12 +64,18 @@ class BiteFight:
         self.drive.maximize_window()
         
     def clicar_elemento(self,patt1):
-        clicar=WebDriverWait(self.drive,10).until(EC.element_to_be_clickable((By.XPATH, patt1)))
-        clicar.click()
+        try:
+            clicar=WebDriverWait(self.drive,10).until(EC.element_to_be_clickable((By.XPATH, patt1)))
+            clicar.click()
+        except:
+            self.chamar_menu()
         
     def achar_elemento(self,patt1,patt2):
-        self.navegador=WebDriverWait(self.drive, 10).until(EC.visibility_of_element_located((By.XPATH, patt1)))
-        self.navegador.send_keys(patt2)
+        try:
+            self.navegador=WebDriverWait(self.drive, 10).until(EC.visibility_of_element_located((By.XPATH, patt1)))
+            self.navegador.send_keys(patt2)
+        except:
+            self.chamar_menu()
         
     def chamar_menu(self):
         status=self.chamar_status()
