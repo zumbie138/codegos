@@ -8,6 +8,24 @@ class Personagem:
         self.inteligencia = int
         self.carisma = car
         self.level = level+1
+        self.equipamentos = {
+            'cabeça':None,
+            'torso':None,
+            'cintura':None,
+            'pernas':None,
+            'mao_direita':None,
+            'mao_esquerda':None,
+            'pés':None,
+            'mãos':None,
+            'dedo1':None,
+            'dedo2':None,
+            'pescoço':None,
+            'pescoço':None,
+        }
+        self.inventario = {}
+        
+    def equipar_item(self):
+        self.item = 0
         
 class Humano(Personagem):
     def guerreiro(self):
