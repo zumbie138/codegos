@@ -5,6 +5,7 @@ from time import sleep
 # import itens
 #from sys import exit
 
+nivel = 0
 gold = 0
 experiencia_total = 0
 inventario = {}
