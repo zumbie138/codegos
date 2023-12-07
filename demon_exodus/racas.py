@@ -1,13 +1,12 @@
 class Personagem:
     def __init__(self,nome_char,forca,agi,vit,int,car,level):
         self.nome = nome_char
-        self.level = level
         self.forca = forca
         self.agilidade = agi
         self.vitalidade = vit
         self.inteligencia = int
         self.carisma = car
-        self.level = level+1
+        self.level = level + 1
         self.equipamentos = {
             'cabeça':None,
             'torso':None,
