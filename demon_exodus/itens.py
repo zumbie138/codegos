@@ -1,9 +1,7 @@
 class Itens:
-    def __init__(self,quantidade,peso,nome,descricao):
+    def __init__(self,quantidade,nome):
         self.quantidade = quantidade
-        self.peso = peso
         self.nome = nome
-        self.descricao = descricao
 
 class Miscelanias(Itens):
     def loot(self):
@@ -13,30 +11,54 @@ class Equipamentos(Itens):
         self.elmo_enferrujado ={
             'nome':'Elmo enferrujado',
             'defesa':1,
+            'descricao':'Um elmo de ferro velho e enferrujado.'
             }
-        self.elmo ={}
-        self.elmo ={}
-        self.elmo ={}
-        self.elmo ={}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
     def torso(self):
-        self.elmo ={}
-        self.elmo ={}
-    def 
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
-    self.elmo ={}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def cintura(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def pernas(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def mao_direita(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def mao_esquerda(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def pes(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def maos(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def dedo1(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def dedo2(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def dedo2(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+    def pescoco(self):
+        self.elmo ={'nome':'','defesa':'','descricao':''}
+        self.elmo ={'nome':'','defesa':'','descricao':''}
