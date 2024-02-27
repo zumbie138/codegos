@@ -55,6 +55,7 @@ class Humano(Personagem):
         self.dano = (((self.carisma+self.inteligencia)/2)*(self.forca+self.agilidade))/10
         self.defesa = (((self.vitalidade+self.inteligencia/2))*(self.forca+self.carisma))/10
         self.vida = 100 + 100*self.vitalidade/100
+        self.magias = {'Curar feridas leves':30}
         
     def ladrao(self):
         self.forca = 1 + self.forca
