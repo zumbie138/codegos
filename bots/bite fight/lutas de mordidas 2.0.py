@@ -13,7 +13,7 @@ import time as tempo
 
 class BiteFight:
     def __init__(self):
-        self.link_bite_fight="https://s36-br.bitefight.gameforge.com/user/login"
+        self.link_bite_fight="https://lobby.bitefight.gameforge.com/pt_BR/"
         self.login="gabriel.mks@gmail.com"
         self.senha="Leproso.66"
         self.xpaths_site ={

@@ -124,7 +124,7 @@ def dormir():
     while vida < vida_t:
         cura = randint(1,5)
         vida = vida + cura + vitalidade
-        print(f'Voce dorme profundamente e cura \033[32m{cura}\033[m pontos de vida\n Vida: {vida:.2f}/{vida_t}')
+        print(f'Voce dorme profundamente e cura {cura} pontos de vida\n Vida: {vida:.2f}/{vida_t}')
         sleep(2.5)
         if vida > vida_t:
             diferenca = vida - vida_t
@@ -294,8 +294,8 @@ def batalha(criatura):
         ataque_criatura = dano_criatura*0.7+dano_rand_criatura*0.3 - (defesa/10)
         vida = vida - ataque_criatura
         vida_criatura = vida_criatura - ataque_heroi
-        print(f'Você causou \033[31m{ataque_heroi:.2f}\033[m de dano no inimigo.\nVida do inimigo: {vida_criatura:.2f}/{vida_criatura_t}')
-        print(f'O inimigo causou \033[31m{ataque_criatura:.2f}\033[m em você.\nVida do Herói: {vida:.2f}/{vida_t}')
+        print(f'Você causou {ataque_heroi:.2f} de dano no inimigo.\nVida do inimigo: {vida_criatura:.2f}/{vida_criatura_t}')
+        print(f'O inimigo causou {ataque_criatura:.2f} em você.\nVida do Herói: {vida:.2f}/{vida_t}')
         sleep(1)
         if vida_criatura <= 0:
             print(f'Criatura derrotada !\nGanhou {experiencia_criatura} de experiência!')
